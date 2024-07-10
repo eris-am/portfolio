@@ -5,5 +5,5 @@ Ethical Hacking graduate from Abertay University. I specialize in cyber security
 
 #Projects
 
-Honors Project: [Identifying and Evaluating Sources of Randomness in IoT Devices](./docs/HonsProject.html)
+Honors Project: [Identifying and Evaluating Sources of Randomness in IoT Devices](./docs/HonsProject.pdf)
 
