@@ -82,6 +82,18 @@
             color: #a0a0a0;
             margin-bottom: 20px; /* Space after description */
         }
+        /* Styling for section h2 links (Honors Project title) */
+        .section h2 a {
+            color: #00e65c; /* Initial distinct color for the link */
+            text-decoration: underline; /* Default underline to make it obvious */
+            transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out; /* Smooth transition for color and shadow */
+        }
+        .section h2 a:hover {
+            color: #00ff66; /* Brighter green on hover */
+            text-shadow: 0 0 5px rgba(0, 255, 102, 0.7); /* Subtle glow on hover */
+            text-decoration: none; /* Remove underline on hover for a cleaner look */
+        }
+
         /* List styling */
         ul {
             list-style: none;
@@ -94,7 +106,7 @@
         }
         /* Custom bullet points */
         ul li::before {
-            content: '>';
+            content: '>'; /* Changed bullet to a '>' for a console feel */
             color: #00ff66; /* Cyber green bullet points */
             font-size: 1.5em;
             position: absolute;
@@ -123,6 +135,18 @@
         .project-item h3:hover, .experience-item h3:hover {
             color: #00ff66; /* Brighter green on hover */
         }
+        /* Styling for project title links */
+        .project-item h3 a {
+            color: #00e65c; /* Initial distinct color for the link */
+            text-decoration: underline; /* Default underline to make it obvious */
+            transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out; /* Smooth transition for color and shadow */
+        }
+        .project-item h3 a:hover {
+            color: #00ff66; /* Brighter green on hover */
+            text-shadow: 0 0 5px rgba(0, 255, 102, 0.7); /* Subtle glow on hover */
+            text-decoration: none; /* Remove underline on hover for a cleaner look */
+        }
+
         .project-item p, .experience-item p {
             font-size: 0.95em;
             color: #cccccc; /* Slightly darker light gray for item descriptions */
@@ -155,6 +179,8 @@
             <div class="contact-info mt-4">
                 <a href="https://www.linkedin.com/in/alexander-mcnaughton-b567a7267" target="_blank" class="mx-2">LinkedIn</a>
                 <span>|</span>
+                <a href="tel:07873917856" class="mx-2">07873917856</a>
+                <span>|</span>
                 <a href="mailto:admcnaughtonn@gmail.com" class="mx-2">admcnaughtonn@gmail.com</a>
             </div>
         </header>
@@ -165,7 +191,7 @@
         </section>
 
         <section class="section honors-project">
-            <h2>Honors Project: Identifying and Evaluating Sources of Randomness in IoT Devices</h2>
+            <h2><a href="./docs/HonsProject.pdf">Honors Project: Identifying and Evaluating Sources of Randomness in IoT Devices</a></h2>
             <p>My Honors Project involved a deep dive into the critical area of randomness in Internet of Things (IoT) devices, a fundamental aspect of their security. I successfully designed and implemented a FIPS-140-3 compliant Random Number Generator (RNG) tailored specifically for IoT environments.</p>
             <p>This project required extensive research into cryptographic best practices, understanding the unique constraints of IoT hardware, and meticulous development to ensure the generated randomness met stringent security standards. It provided hands-on experience in low-level security implementation, performance optimization for resource-constrained devices, and rigorous testing against cryptographic requirements, demonstrating my ability to tackle complex security challenges with practical solutions.</p>
         </section>
@@ -197,7 +223,7 @@
             <p class="header-description">Practical engagements and ongoing development that showcase a commitment to cybersecurity principles and readiness for professional roles.</p>
             <div class="experience-item">
                 <h3>Currently Studying</h3>
-                <p><strong>2024-</strong> Studying to achieve CompTIA Security+ certification. This ongoing certification demonstrates a proactive approach to mastering industry-recognized security fundamentals and best practices, directly enhancing readiness for a professional cybersecurity environment.</p>
+                <p><strong>2025-</strong> Studying to achieve CompTIA Security+ certification. This ongoing certification demonstrates a proactive approach to mastering industry-recognized security fundamentals and best practices, directly enhancing readiness for a professional cybersecurity environment.</p>
             </div>
             <div class="experience-item">
                 <h3>CyberFirst Advanced Residential Course</h3>
@@ -213,19 +239,19 @@
             <h2>Recent Projects / Technical Skills</h2>
             <p class="header-description">Hands-on projects demonstrating core technical competencies, problem-solving abilities, and a practical application of ethical hacking and forensic investigation skills.</p>
             <div class="project-item">
-                <h3>WANNACRY Analysis</h3>
+                <h3><a href="./docs/WannaCryAnalysis.pdf">WANNACRY Analysis</a></h3>
                 <p>Using a sample of a virus to provide detection and mitigation techniques (Reverse Engineering, Technical Writing). This project demonstrates a direct ability to dissect malware, understand its behavior, and formulate defensive strategies, crucial for incident response and threat intelligence roles.</p>
             </div>
             <div class="project-item">
-                <h3>BatchExifVisualizer</h3>
+                <h3><a href="./docs/BatchExifVisualizer.pdf">BatchExifVisualizer</a></h3>
                 <p>Developing a forensics tool to automate the management of metadata in files (Automation, Python scripting, Forensics). This highlights proficiency in developing practical forensic tools, automating critical processes, and understanding data integrity, essential for digital forensics and e-discovery.</p>
             </div>
-            <div class="project-item">
-                <h3>Simulated Forensic Network Investigation</h3>
+            <div class="./docs/ForensicInvestigation.pdf">
+                <h3><a href="#">Simulated Forensic Network Investigation</a></h3>
                 <p>Using simulated network data to identify and obtain evidence in a mock investigation (Networking, Analysis). This showcases strong analytical capabilities in network security, the ability to pinpoint anomalies, and skill in evidence collection within a simulated real-world scenario.</p>
             </div>
             <div class="project-item">
-                <h3>Pi Messenger</h3>
+                <h3><a href="./docs/PiMessage.pdf">Pi Messenger</a></h3>
                 <p>Used AWS to develop a cloud-based messaging service. As well as developing an interface for the service on a Raspberry Pi (AWS, Software Development, Databases). This project demonstrates a holistic understanding of secure application development, cloud infrastructure (AWS), and database security within a full-stack context.</p>
             </div>
         </section>
